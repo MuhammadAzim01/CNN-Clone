@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNN</title>
+    <script src="https://kit.fontawesome.com/a48d321c7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assests/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assests/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assests/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assests/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assests/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="left-header">
+                <li><i class="fa fa-bars"></i></li>
+                <li><a href="#"><img src="./assests/logo.svg" alt="logo" class="logo"></a></li>
+                <li><a href="#">US</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Style</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <ul class="right-header">
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Live TV</a></li>
+                <li class="icon"><i class="fas fa-search"></i></li>
+                <li><button class="login-btn">Log In</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="trending-tags">
+            <ul>
+                <li><a href="#">Venezuela regains prison control</a></li>
+                <li><a href="#">China's vacant homes</a></li>
+                <li><a href="#">Asteroid sample</a></li>
+                <li><a href="#">Maui's 150-year-old banyan tree</a></li>
+                <li><a href="#">Gisele Bundchen</a></li>
+                <li><a href="#">Usher</a></li>
+            </ul>
+        </section>
+        <section class="trending-news">
+            <div class="main-column news">
+                <h1><a href="#">Ukraine: Strikes cause 'significant damage' to Odesa port</a></h1>
+                <div class="image-overlay-container">
+                    <img src="assests/headlines/DefenceForcesUkraine.jpg" alt="Defence Forces Southern Ukraine" class="live-update">
+                    <ul>
+                        <li>LIVE UPDATES</li>
+                    </ul>
+                </div>
+                <h2><a href="">Moscow targeted Ukraine’s grain export infrastructure overnight, sparking a fire and killing a civilian in the latest attack since the collapse of the Black Sea grain deal</a></h2>
+                <ul class="details">
+                    <li><a href="#">Ukrainian drones attack border regions and Crimea, Russian officials say</a></li>
+                    <li><a href="#"><span><i class="fa-regular fa-circle-play fa-sm" style="color: #f51d05;"></i></span> Hear why retired Air Force colonel says Ukraine attack is ‘impressive’</a></li>
+                    <li><a href="#">Wagner forces haven’t withdrawn from Africa in ‘meaningful’ numbers: official</a></li>
+                </ul>
+            </div>    
+            <div class="second-column news">
+                <div class="news-one">
+                    <img src="assests/headlines/SikhLeader.jpg" alt="Sikh Leader">
+                    <h2><a href="#">Western intelligence led to Canada accusing India of Sikh activist’s assassination, US Ambassador says</a></h2>
+                    <ul>
+                        <li><a href="#"><span class="tag-bold">Opinion: </span>Trudeau's fumble on India</a></li>
+                    </ul>
+                </div>
+                <div class="news-two">
+                    <img src="assests/headlines/ElNinoClimate.jpg" alt="El Nino climate">
+                    <h2><a href="#">An El Nino winter is coming. Here's what that could mean for the US</a></h2>
+                    <ul class="details">
+                        <li><a href="#">Australia sees ominous signals of potentially devastating summer</a></li>
+                        <li><a href="#">How climate changes threatens some of the world's most covered real estate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="third-column news">
+                <div class="news-one">
+                    <img src="assests/headlines/KevinMccarthy.jpg   " alt="KevinMcCarty">
+                    <h2><a href="#">McCarthy confronts key decisions as Congress hurtles towards government shutdown</a></h2>
+                    <ul class="list-bar-container">
+                        <li><a href="#">Only survivor from Australia's suspected mushroom lunch poisoning released from hospital</a></li>
+                        <li><a href="#">Mafia boss who was once one of the most wanted men in Europol dies in custody</a></li>
+                        <li><a href="#">Writers and studios reach tentative deal to end Hollywood strike</a></li>
+                        <li><a href="#">China installs floating barrier in South China Sea, violating the Philippines' fishing rights</a></li>
+                        <li><a href="#">Armenia PM takes swipe at Russia as first civilians leave breakaway Nagorno-Karabakh</a></li>
+                        <li><a href="#"><span><i class="fa-regular fa-circle-play fa-sm" style="color: #f51d05;"></i></span> CNN host presses Iranian president on requiring women to wear hijabs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="top-stories-section">
+            <section class="more-stories section-tag">
+                <div class="title">more top stories</div>
+                <img src="assests/top_stories/finland.jpg" alt="">
+                <h2><a href="#">This country is the first in the world to introduce digital passports</a></h2>
+                <ul class="list-bar-container">
+                    <li><a href="#">NBA suspends player accused of exposing himself to sports psychologist</a></li>
+                    <li><a href="#">Mick Jagger says his kids ‘don’t need $500 million’ as he hints he may give away their inheritance</a></li>
+                    <li><a href="#">UN to send mission to Nagorno-Karabakh as exodus nears 100,000</a></li>
+                    <li><a href="#"><span><i class="fa-regular fa-circle-play fa-sm" style="color: #f51d05;"></i></span> Philippine president pledges to defend territory, says ‘not looking for trouble’</a></li>
+                </ul>
+            </section>
+            <section class="featured section-tag">
+                <div class="title">featured</div>
+                <img src="assests/top_stories/chance-encounters-tracy-and-tim-1.jpg" alt="chance-encounters-tracy-and-tim">
+                <h2><a href="#">They fell in love and lost each other in South America. Then a not stuck on a door brought them back together</a></h2>
+                <ul class="list-bar-container">
+                    <li>
+                        <img src="assests/top_stories/card-amazon-river-expedition.jpg" alt="card-amazon-river-expedition">
+                        <a href="#">What's the world's longest river? New expedition aims to settle the debate once and for all</a>
+                    </li>
+                    <li>
+                        <img src="assests/top_stories/china-fujian-over-water-train.jpg" alt="china-over-water-train">
+                        <a href="#">China debuts its first overwater high-speed train</a>
+                    </li>
+                </ul>
+            </section>
+            <aside class="short-news">
+                <img src="assests/top_stories/aside-ad.jpg" alt="ad" class="ad">
+                <ul class="list-bar-container">
+                    <li>
+                        <img src="assests/top_stories/ilia-calderon-0927-restricted.jpg" alt="calderon">
+                        <a href="#"><span class="tag-bold">Analysis: </span>Right-wing media fumes over Univison anchor's questions at GOP debate</a>
+                    </li>
+                    <li>
+                        <div class="image-overlay-container" data-type-text="Analysis">
+                            <img src="assests/top_stories/woven-sandals-spain-cave-intl-scli-top.jpg" alt="sandals-in-spain-cave">
+                        </div>
+                        <a href="#">These 6,000-year-old sandals found in a spanish cave are Europe's oldest shoes</a>
+                    </li>
+                    <li>
+                        <img src="assests/top_stories/pleitgen-ukraine-soldier1.jpg" alt="Ukraine-soldier">
+                        <a href="#"><span><i class="fa-regular fa-circle-play fa-sm" style="color: #f51d05;"></i></span> He lost a leg, learned to walk again, and is back on the battlefield</a>
+                        
+                    </li>
+                    <li>
+                        <img src="assests/top_stories/wally-alligator-file-2019.jpg" alt="alligator">
+                        <a href="#">Emotional support alligator barred from entering MLB stadium</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="top-story">
+                <img src="assests/top_stories/magnus-carlsen-maxime-vachier-lagrave-ai-cup-spt-intl.jpg" alt="magnus-carlsen">
+                <h2><a href="#">Magnus Carlsen defeated twice in same tournament by French grandmaster Maxime Vachier-Lagrave</a></h2>
+                <ul class="list-bar-container">
+                    <li>
+                        <img src="assests/top_stories/ryder-cup-093023.jpg" alt="card-amazon-river-expedition">
+                        <a href="#">American golfer in tears after historic Ryder Cup loss</a>
+                    </li>
+                    <li>
+                        <img src="assests/top_stories/atari-2600.jpg" alt="atarti">
+                        <a href="#">Atari 2600+ sees its future in retro games</a>
+                    </li>
+                    <li>
+                        <div class="image-overlay-container" data-type-text="video">
+                            <img src="assests/top_stories/iraq-wedding-fire-prime-minister-intl.jpg" alt="atarti">
+                        </div>
+                        <a href="#">Videos shows moment ceiling catches fire as newlyweds dance at wedding</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="top-story">
+                <img src="assests/top_stories/coping-with-suicide-stock.jpg" alt="girl-with-a-book">
+                <h2><a href="#">How to cope with a loved one's suicide, from someone who's been through it</a></h2>
+                <ul class="list-bar-container">
+                    <li>
+                        <div class="image-overlay-container" data-type-text="analysis">
+                            <img src="assests/top_stories/nobel-prize-medals-file.jpg" alt="medals">
+                        </div>
+                        <a href="#">What's the world's longest river? New expedition aims to settle the debate once and for all</a>
+                    </li>
+                    <li>
+                        <img src="assests/top_stories/simone-biles-us-gymnastics-championship-082723.jpg" alt="simone-biles">
+                        <a href="#">Simone biles goes for more medals: How to watch the 2023 World</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="top story">
+                <img src="assests/top_stories/ryder-cup-092923.jpg" alt="ryder-cup">
+                <h2><a href="#">Ryder Cup: Europe conjure late magic to prevent US from winning a single match and take dominant day one lead</a></h2>
+                <ul class="list-bar-container">
+                    <li>
+                        <img src="assests/top_stories/cheerleader-loses-pants-3.jpg" alt="cheerleader-loses-pants">
+                        <a href="#">Wind on his legs alerted this cheerleader that something was wrong
+                        </a>
+                    </li>
+                    <li>
+                        <img src="assests/top_stories/china-fujian-over-water-train.jpg" alt="china-over-water-train">
+                        <a href="#">China debuts its first overwater high-speed train</a>
+                    </li>
+                    <li>
+                        <img src="assests/top_stories/wally-alligator-file-2019.jpg" alt="alligator">
+                        <a href="#">Emotional support alligator barred from entering MLB stadium</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="featured-sections">
+            <h2>Featured Sections</h2>
+            <section class="business section-tag">
+                <div class="title">CNN Business</div>
+                <img src="assests/featured/ElectricCars.jpg" alt="Electric-cars-at-port">
+                <h2><a href="#">The world needs cheap electric cars. That spells trouble for big carmakers</a></h2>
+                <ul class="list-bar-container">
+                    <li><a href="#">Judge: Starbucks violated federal labor law by withholding pay hikes from unionized workers</a></li>
+                    <li><a href="#">Evergrande’s chairman detained. The company will struggle to survive</a></li>
+                    <li><a href="#">Autoworkers union may expand its strike again</a></li>
+                    <li><a href="#">America’s emergency oil reserve is at a 40-year low — and that could inflate oil prices, Goldman Sachs says</a></li>
+                    <li><a href="#">Gen Xers are next in line for retirement. Many haven’t saved nearly enough</a></li>
+                </ul>
+            </section>
+            <section class="travel section-tag">
+                <div class="title">CNN Travel</div>
+                <img src="assests/featured/SuperYachts.jpg" alt="Electric-cars-at-port">
+                <h2><a href="#">'If you're not there, then you don't exist:' Mega-wealthy sail in for glitzy superyacht show</a></h2>
+                <ul class="list-bar-container">
+                    <li><a href="#">The 500-year-old hamam bringing Istanbul’s past to life</a></li>
+                    <li><a href="#">This country's cuisine is completely misunderstood, according to locals</a></li>
+                    <li><a href="#">Her family inherited a 900-year-old Italian castle. Here’s what it’s like living there</a></li>
+                    <li><a href="#">Secret World War II tunnels to open to public</a></li>
+                    <li><a href="#">The best time to travel to Europe is right now. Here's why</a></li>
+                </ul>
+            </section>
+            <section class="ad">
+                <img src="assests/featured/ad.gif" alt="ad-cnn" class="ad">
+            </section>
+            <section class="sport section-tag">
+                <div class="title">sport</div>
+                <img src="assests/featured/Golfer.jpg" alt="golfer">
+                <h2><a href="#">American golfer in tears after historic Ryder Cup loss</a></h2>
+                <ul class="list-bar-container">
+                    <li><a href="#">The Asian Games’ golden ticket: South Korea’s esports stars target medal success – and a military exemption</a></li>
+                    <li><a href="#">Chile’s football federation criticized for handling of star player’s 100th appearance</a></li>
+                    <li><a href="#">Kamila Valieva doping case has left US skater wondering when he’ll receive his Olympic medal – 19 months after the Games</a></li>
+                    <li><a href="#">What is hazing and how is it affecting student athletes in the US?</a></li>
+                </ul>
+            </section>
+            <section class="style section-tag">
+                <div class="title">style</div>
+                <img src="assests/featured/KimKardashian.jpg" alt="Kim KimKardashian">
+                <h2><a href="#">Kim KimKardashian debuts radically different look in a new shoot</a></h2>
+                <ul class="list-bar-container">
+                    <li><a href="#">Angelina Jolie reveals first looks from fashion line</a></li>
+                    <li><a href="#">Why Coco Chanel’s fashion legacy lives on</a></li>
+                    <li><a href="#">What we keep when loved ones die — and what it says about grief</a></li>
+                    <li><a href="#">British Museum asks public to help recover stolen treasures</a></li>
+                    <li><a href="#">Pokémon teams up with Van Gogh Museum</a></li>
+                </ul>
+            </section>
+            <section class="opinion section-tag">
+                <div class="title">Opinion</div>
+                <img src="assests/featured/Zelensky.jpg" alt="Zelensky">
+                <h2><a href="#">Ukraine's bumpy road ahead just got rockier</a></h2>
+                <ul class="list-bar-container">
+                    <li><a href="#">The Taylor Swift-Travis Kelce narrative has a dark side</a></li>
+                    <li><a href="#">Who is Kim Jong Un’s right hand woman?</a></li>
+                    <li><a href="#">Trudeau’s fumble on India</a></li>
+                    <li><a href="#">The mythology of Russell Brand is finally exposed</a></li>
+                    <li><a href="#">What India’s possible name change is really about</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>
+        
+        <section class="categories">
+            <div class="search">
+                <input type="text" placeholder="Search CNN...">
+            </div>
+            <section class="profile">
+                <i class="fa-regular fa-circle-user fa-xl"></i>
+                <h3>Log In</h3>
+            </section>
+            <section class="mobile-category">
+                <h2>Live TV</h2>
+                <h2>Audio</h2>
+            </section>
+            <div class="world">
+                <h2><a href="#">World</a></h2>
+                <ul>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">Americas</a></li>
+                    <li><a href="#">Asia</a></li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">China</a></li>
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Middle East</a> </li>
+                    <li><a href="#">United Kingdom</a></li>
+                </ul>
+            </div>
+            <div class="politics">
+                <h2><a href="#">US Politics</a></h2>
+                <ul>
+                    <li><a href="#">The Biden Presidency</a></li>
+                    <li><a href="#">Facts First</a></li>
+                    <li><a href="#">2024 Elections</a></li>
+                </ul>
+            </div>
+            <div class="business">
+                <h2><a href="#">Business</a></h2>
+                <ul>
+                    <li><a href="#">Markets</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Calculators</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+            </div>
+            <div class="health">
+                <h2><a href="#">Health</a></h2>
+                <ul>
+                    <li><a href="#">Life, But Better</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">Sleep</a></li>
+                    <li><a href="#">Mindfulness</a></li>
+                    <li><a href="#">Relationships</a></li>
+                </ul>
+            </div>
+            <div class="entertainment">
+                <h2><a href="#">Entertainment</a></h2>
+                <ul>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Television</a></li>
+                    <li><a href="#">Celebrity</a></li>
+                </ul>
+            </div>
+            <div class="tech">
+                <h2><a href="#">Tech</a></h2>
+                <ul>
+                    <li><a href="#">Innovate</a></li>
+                    <li><a href="#">Gadget</a></li>
+                    <li><a href="#">Foreseeable Future</a></li>
+                    <li><a href="#">Mission: Ahead</a></li>
+                    <li><a href="#">Upstarts</a></li>
+                    <li><a href="#">Work Transformed</a></li>
+                    <li><a href="#">Innovative Cities</a></li>
+                </ul>
+            </div>
+            <div class="Style">
+                <h2><a href="#">Style</a></h2>
+                <ul>
+                    <li><a href="#">Arts</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Luxury</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Video</a></li>
+                </ul>
+            </div>
+            <div class="travel">
+                <h2><a href="#">Travel</a></h2>
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Food & Drink</a></li>
+                    <li><a href="#">Stay</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+            </div>            
+            <div class="sports">
+                <h2><a href="#">Sports</a></h2>
+                <ul>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Tennis</a></li>
+                    <li><a href="#">Golf</a></li>
+                    <li><a href="#">Motorsport</a></li>
+                    <li><a href="#">US Sports</a></li>
+                    <li><a href="#">Olympics</a></li>
+                    <li><a href="#">Climbing</a></li>
+                    <li><a href="#">Esports</a></li>
+                    <li><a href="#">Hockey</a></li>
+                </ul>
+            </div>
+            <div class="videos">
+                <h2><a href="#">Videos</a></h2>
+                <ul>
+                    <li><a href="#">Live TV</a></li>
+                    <li><a href="#">Digital Studios</a></li>
+                    <li><a href="#">CNN Films</a></li>
+                    <li><a href="#">HLN</a></li>
+                    <li><a href="#">TV Schedule</a></li>
+                    <li><a href="#">TV Shows A-Z</a></li>
+                    <li><a href="#">CNNVR</a></li>
+                </ul>
+            </div>
+            <div class="features">
+                <h2><a href="#">Features</a></h2>
+                <ul>
+                    <li><a href="#">As Equals</a></li>
+                    <li><a href="#">Call to Earth</a></li>
+                    <li><a href="#">Freedom Project</a></li>
+                    <li><a href="#">Impact Your World</a></li>
+                    <li><a href="#">Inside Africa</a></li>
+                    <li><a href="#">2 Degrees</a></li>
+                    <li><a href="#">CNN Heroes</a></li>
+                    <li><a href="#">All Features</a></li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h2><a href="#">Weather</a></h2>
+                <ul>
+                    <li><a href="#">Climate</a></li>
+                    <li><a href="#">Wildfire Tracker</a></li>
+                    <li><a href="#">Video</a></li>
+                </ul>
+            </div>
+            <div class="extra">
+                <h2><a href="#">More</a></h2>
+                <ul>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Longform</a></li>
+                    <li><a href="#">Investigations</a></li>
+                    <li><a href="#">CNN Profiles</a></li>
+                    <li><a href="#">CNN Leadership</a></li>
+                    <li><a href="#">CNN Newsletters</a></li>
+                    <li><a href="#">Work for CNN</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="about">
+            <nav>
+                <ul class="left">
+                    <li><a href="#"><img src="./assests/logo.svg" alt="logo" class="logo" width="20px" height="70px"></a></li>
+                    <li><a href="#">US</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Live TV</a></li>
+                    <li><a href="#">FOLLOW CNN</a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                    <li class="icon"><button class="login-btn">Log In</button></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="bottom">
+            <ul class="terms">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Settings</a></li>
+                <li><a href="#">Ad Choices</a></li>
+                <li><a href="#">Accessibility & CC</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Newsletters</a></li>
+            </ul>
+            <ul class="copyright">
+                <li>© 2023 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved.</li>
+                <li>CNN Sans ™ & © 2016 Cable News Network. </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
